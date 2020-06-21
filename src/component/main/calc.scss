@@ -1,0 +1,64 @@
+::-webkit-scrollbar-track{
+  background: #CFD8DC;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #90A4AE ;
+  border-radius: 6px;
+  border: 3px solid #CFD8DC;
+}
+.calculator-container{
+  overflow: hidden;
+  height: calc(100vh - 7vh);
+  .d1{
+    height: 20vh;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    div{
+      overflow-x: scroll;
+      color: white;
+      font-weight: bolder;
+      font-size: 4rem;
+    }
+  }
+  .d2{
+    height: 73vh;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    div{
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      flex-grow: 1;
+      div{
+        margin: 2px;
+        display: flex;
+        button{
+          border-color: rgba(223,223,223,0.12);
+          flex-grow: 1;
+          background-color: #000000;
+          color: white;
+          font-size: 1.3rem;
+        }
+        button:hover{
+          opacity: 0.5;
+          color: crimson;
+        }
+        button:active{
+          position: relative;
+          top: 5px;
+        }
+        .equals-button {
+          background-color: royalblue;
+        }
+        .equals-button:hover{
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
